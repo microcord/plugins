@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="ReviewDB" android:theme="@style/ReviewDbTheme">
+        <service
+            android:name=".ReviewDbDiscoveryService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="dev.mantikafasi.manticord.PLUGIN" />
+            </intent-filter>
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.ID" android:value="${manticordPluginId}" />
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.ENTRYPOINT" android:value="${manticordPluginEntrypoint}" />
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.DESCRIPTION" android:value="${manticordPluginDescription}" />
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.USES_RESOURCES" android:value="${manticordPluginUsesResources}" />
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.MANTICORD_VERSION_MINIMUM" android:value="${manticordPluginVersionMinimum}" />
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.MANTICORD_VERSION_MAXIMUM_EXCLUSIVE" android:value="${manticordPluginVersionMaximumExclusive}" />
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.LOAD_MODE" android:value="${manticordPluginLoadMode}" />
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.PRIORITY" android:value="${manticordPluginPriority}" />
+            <meta-data android:name="dev.mantikafasi.manticord.plugin.REQUIREMENTS" android:value="${manticordPluginRequirements}" />
+        </service>
+    </application>
+</manifest>

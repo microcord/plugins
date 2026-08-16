@@ -1,0 +1,1 @@
+emojis dont render in the input still fix that later
