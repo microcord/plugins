@@ -35,8 +35,7 @@ android {
 }
 
 dependencies {
-    val localPluginApi = file("../../manticordrebuild/build/plugin-sdk/manticord-plugin-api-1.0.5.jar")
-    compileOnly(if (localPluginApi.exists()) files(localPluginApi) else "dev.mantikafasi.manticord:plugin-api:1.0.5")
+    compileOnly(rootProject.extra["microcordSdk"]!!)
     compileOnly(libs.rxjava)
     compileOnly(libs.androidx.recyclerview)
     compileOnly(libs.androidx.appcompat)
