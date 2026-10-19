@@ -39,4 +39,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "microcord-plugins"
-include(":reviewdb", ":messagelogger")
+include(":reviewdb", ":messagelogger", ":translate")
