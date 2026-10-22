@@ -5,8 +5,6 @@ name: Release
 # what releases it.
 #
 # Needs these repository secrets:
-# - MICROCORD_MAVEN_USER, MICROCORD_MAVEN_TOKEN: a git.hoodnet.work user and a token with
-#   read:packages, for the private Microcord plugin SDK;
 # - PLUGIN_KEYSTORE_BASE64, PLUGIN_KEYSTORE_PASSWORD, PLUGIN_KEY_ALIAS, PLUGIN_KEY_PASSWORD: the
 #   shared plugin signing key.
 
@@ -48,8 +46,6 @@ jobs:
 
       - name: Build changed plugins and update the index
         env:
-          MICROCORD_MAVEN_USER: ${{ secrets.MICROCORD_MAVEN_USER }}
-          MICROCORD_MAVEN_TOKEN: ${{ secrets.MICROCORD_MAVEN_TOKEN }}
           PLUGIN_KEYSTORE_PASSWORD: ${{ secrets.PLUGIN_KEYSTORE_PASSWORD }}
           PLUGIN_KEY_ALIAS: ${{ secrets.PLUGIN_KEY_ALIAS }}
           PLUGIN_KEY_PASSWORD: ${{ secrets.PLUGIN_KEY_PASSWORD }}

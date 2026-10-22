@@ -11,8 +11,7 @@ browser.
 
 ## Building
 
-Plugins compile against the Microcord plugin SDK from Microcord's Maven. Put your `git.hoodnet.work`
-username and a token with `read:packages` in `~/.gradle/gradle.properties` as `gpr.user` and `gpr.key`.
+Plugins compile against the Microcord plugin SDK from Microcord's public Maven branch; no login needed.
 
 ```bash
 ./gradlew :messagelogger:assembleDebug
