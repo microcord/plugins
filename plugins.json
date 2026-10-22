@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "dev.mantikafasi.manticord.messagelogger",
+      "packageName": "dev.mantikafasi.manticord.messagelogger",
+      "name": "Message Logger",
+      "description": "Keeps deleted messages in chat and shows message edit history",
+      "authors": [
+        "mantikafasi"
+      ],
+      "versionCode": 1,
+      "versionName": "1.0",
+      "pluginApiMinimum": 2,
+      "signerSha256": "8a4700ed09b8bea5606a6bf87dfa409f5b963006a226b557e385857a21f31315",
+      "sourceUrl": "https://github.com/microcord/plugins/tree/main/messagelogger",
+      "apkUrl": "https://cdn.jsdelivr.net/gh/microcord/plugins@aa543f14d4b32ef2dc4eef5329de5a79a8251a36/messagelogger.apk",
+      "sha256": "e2e88a006fa7f647dfb60eca7e00468b7b4a27e07814402066255476d3e49ad2",
+      "size": 659889
+    },
+    {
+      "id": "dev.mantikafasi.manticord.reviewdb",
+      "packageName": "dev.mantikafasi.manticord.reviewdb",
+      "name": "ReviewDB",
+      "description": "ReviewDB user and server reviews",
+      "authors": [
+        "mantikafasi"
+      ],
+      "versionCode": 1,
+      "versionName": "1.0",
+      "pluginApiMinimum": 1,
+      "signerSha256": "8a4700ed09b8bea5606a6bf87dfa409f5b963006a226b557e385857a21f31315",
+      "sourceUrl": "https://github.com/microcord/plugins/tree/main/reviewdb",
+      "apkUrl": "https://cdn.jsdelivr.net/gh/microcord/plugins@aa543f14d4b32ef2dc4eef5329de5a79a8251a36/reviewdb.apk",
+      "sha256": "6dd6fd519dd71536c3bf2f3803134218ac94fd109de92d147e378faa8d147bbf",
+      "size": 688203
+    },
+    {
+      "id": "dev.mantikafasi.manticord.translate",
+      "packageName": "dev.mantikafasi.manticord.translate",
+      "name": "Translate",
+      "description": "Translates messages and sends translated text",
+      "authors": [
+        "Tyman",
+        "mantikafasi"
+      ],
+      "versionCode": 1,
+      "versionName": "1.0",
+      "pluginApiMinimum": 2,
+      "signerSha256": "8a4700ed09b8bea5606a6bf87dfa409f5b963006a226b557e385857a21f31315",
+      "sourceUrl": "https://github.com/microcord/plugins/tree/main/translate",
+      "apkUrl": "https://cdn.jsdelivr.net/gh/microcord/plugins@aa543f14d4b32ef2dc4eef5329de5a79a8251a36/translate.apk",
+      "sha256": "2dfdf35ed6569ba4d6992a1619543bc2553d2dd51c46b1623cdb40839c27c38b",
+      "size": 660006
+    }
+  ]
+}
