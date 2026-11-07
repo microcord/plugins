@@ -8,6 +8,7 @@ browser.
 | [Message Logger](messagelogger) | Keeps deleted messages in the chat and shows edit history |
 | [ReviewDB](reviewdb) | User and server reviews |
 | [Translate](translate) | Translates messages and sends translated text |
+| [Last.fm Rich Presence](lastfm) | Shows your Last.fm now playing as rich presence |
 
 ## Building
 
