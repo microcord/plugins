@@ -29,6 +29,8 @@ import dev.mantikafasi.manticord.plugins.api.pluginMessageDecorator
 import dev.mantikafasi.manticord.plugins.api.pluginMessageDeleteInterceptor
 import dev.mantikafasi.manticord.plugins.api.pluginMessageUpdateInterceptor
 import dev.mantikafasi.manticord.plugins.api.pluginSettings
+import java.util.Collections
+import java.util.concurrent.ConcurrentHashMap
 import rx.Completable
 
 /**
@@ -40,6 +42,9 @@ import rx.Completable
 class MessageLoggerPlugin : ManticordPlugin {
     private lateinit var scope: PluginScope
     private val log = MessageLog()
+
+    /** Kept messages this plugin is deleting itself, which the delete interceptor must let go. */
+    private val releasing: MutableSet<Long> = Collections.newSetFromMap(ConcurrentHashMap())
 
     override val settingsSchema = pluginSettings {
         section("Logging")
@@ -65,7 +70,7 @@ class MessageLoggerPlugin : ManticordPlugin {
         val ui = scope.ui
 
         ui.registerMessageInterceptor(pluginMessageDeleteInterceptor("keep_deleted", onDelete = { message ->
-            message.takeIf { scope.settings.getBoolean(LOG_DELETES, true) && isLogged(it) }
+            message.takeIf { !releasing.remove(it.id) }?.takeIf { scope.settings.getBoolean(LOG_DELETES, true) && isLogged(it) }
                 ?.also { log.markDeleted(it.id, it.channelId, System.currentTimeMillis()) }
         }))
 
@@ -133,8 +138,9 @@ class MessageLoggerPlugin : ManticordPlugin {
         scope.ui.refreshMessages()
     }
 
-    /** Re-runs Discord's delete for a kept message; the log no longer has it, so it goes through. */
+    /** Re-runs Discord's delete for a kept message, telling the interceptor not to keep it again. */
     private fun deleteFromChat(channelId: Long, messageId: Long) {
+        releasing += messageId
         StoreStream.getGatewayConnection().messageDelete.onNext(ModelMessageDelete(channelId, messageId))
     }
 
