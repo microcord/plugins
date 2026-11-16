@@ -88,8 +88,8 @@ class TranslatePlugin : ManticordPlugin {
                 val arguments = context.arguments
                 val result = translate(
                     arguments["text"] as String,
-                    from = (arguments["from"] as String?)?.ifBlank { null } ?: "auto",
-                    to = (arguments["to"] as String?)?.ifBlank { null } ?: language(),
+                    from = languageCode(arguments["from"]) ?: "auto",
+                    to = languageCode(arguments["to"]) ?: language(),
                 )
                 if (arguments["send"] == false) {
                     scope.runOnMainThread { scope.dialogs.alert("Translation", result.text) }
@@ -100,8 +100,9 @@ class TranslatePlugin : ManticordPlugin {
             },
         ) {
             string("text", "The text to translate", required = true)
-            string("to", "Language code to translate to (default: the one in settings)")
-            string("from", "Language code to translate from (default: detected)")
+            // Offered as a list rather than typed codes; typing filters it by name or code.
+            string("to", "Language to translate to (default: the one in settings)", choices = LANGUAGE_CHOICES.keys.toList())
+            string("from", "Language to translate from (default: detected)", choices = LANGUAGE_CHOICES.keys.toList())
             boolean("send", "Send the translation (default true)")
         })
     }
@@ -133,6 +134,9 @@ class TranslatePlugin : ManticordPlugin {
     }
 
     private fun language() = scope.settings.getString(LANGUAGE, "en")
+
+    /** A picked "English (en)" choice as its code; null when the option was left out. */
+    private fun languageCode(choice: Any?) = (choice as String?)?.let { LANGUAGE_CHOICES[it] ?: it.ifBlank { null } }
 
     /** Google Translate's free endpoint, as the original plugin uses. Blocks; call off the main thread. */
     private fun translate(text: String, from: String, to: String): Translation {

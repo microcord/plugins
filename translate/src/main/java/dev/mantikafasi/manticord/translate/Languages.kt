@@ -139,3 +139,6 @@ internal val LANGUAGES = linkedMapOf(
     "yo" to "Yoruba",
     "zu" to "Zulu",
 )
+
+/** Slash command choices, "English (en)", so a language can be found by its name or its code. */
+internal val LANGUAGE_CHOICES = LANGUAGES.entries.associate { (code, name) -> "$name ($code)" to code }
