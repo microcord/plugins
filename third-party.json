@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": "dev.mantikafasi.manticord.activenow",
+    "packageName": "dev.mantikafasi.manticord.activenow",
+    "name": "Active Now",
+    "description": "Shows active friends above your DMs and live voice channels on profiles.",
+    "authors": ["Maarij"],
+    "versionCode": 3,
+    "versionName": "1.2.0",
+    "pluginApiMinimum": 3,
+    "apkUrl": "https://github.com/mmaarij123/microcord-active-now/releases/download/v1.2.0/ActiveNow.apk",
+    "sha256": "1c0ef0b42878ad0609bdf3549ec7b9bf48da16cccdc18f4940bf36893a19d1f5",
+    "size": 75139,
+    "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
+    "sourceUrl": "https://github.com/mmaarij123/microcord-active-now"
+  }
+]
