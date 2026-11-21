@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": "emojireplace",
+    "packageName": "io.github.mmaarij123.emojireplace",
+    "name": "Emoji Replace",
+    "description": "Choose from 13 offline Unicode emoji packs for chat and the emoji picker.",
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 7,
+    "versionName": "1.4.2",
+    "pluginApiMinimum": 2,
+    "apkUrl": "https://github.com/mmaarij123/emoji-replace-microcord/releases/download/v1.4.2/Emoji-Replace-1.4.2.apk",
+    "sha256": "36206917db8c13fd856efe6bed50c8fe66227388d15b77ea38691712cc73f3ce",
+    "size": 51438798,
+    "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
+    "sourceUrl": "https://github.com/mmaarij123/emoji-replace-microcord"
+  }
+]
