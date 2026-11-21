@@ -1,18 +1,18 @@
 [
   {
     "id": "manticord.orbs_shop",
-    "packageName": "dev.mantikafasi.manticord.orbsshop",
+    "packageName": "io.github.mmaarij123.orbsshop",
     "name": "Orbs Shop",
     "description": "Browse and redeem Discord cosmetics with Orbs",
     "authors": [
       "Maarij"
     ],
-    "versionCode": 3,
-    "versionName": "1.2.0",
+    "versionCode": 4,
+    "versionName": "1.2.1",
     "pluginApiMinimum": 1,
-    "apkUrl": "https://github.com/mmaarij123/microcord-orbs-shop/releases/download/v1.2.0/OrbsShop-1.2.0-debug.apk",
-    "sha256": "ef2fa57e8c5279b5b0cef373504bedb641aedea403c51f3068884cac66191df3",
-    "size": 995974,
+    "apkUrl": "https://github.com/mmaarij123/microcord-orbs-shop/releases/download/v1.2.1/OrbsShop-1.2.1-debug.apk",
+    "sha256": "3f662fc8f959079b4f010018657402be1289e8158bd9cd258c16b3fd460db5c8",
+    "size": 995871,
     "signerSha256": "7191384c191b94c6ce3a8a32edbe6ec42abe4bf81a124ea4816a7d92087dd5d4",
     "sourceUrl": "https://github.com/mmaarij123/microcord-orbs-shop"
   }
