@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": "microcord.questhome",
+    "packageName": "io.github.mmaarij123.quests",
+    "name": "Discord Quests",
+    "description": "Browse Discord quests, play eligible mobile quest videos, and claim rewards in Microcord",
+    "authors": ["Maarij"],
+    "versionCode": 9,
+    "versionName": "2.3.1",
+    "pluginApiMinimum": 1,
+    "apkUrl": "https://github.com/mmaarij123/microcord-quests/releases/download/v2.3.1/microcord-quests.apk",
+    "sha256": "f75ac409c3b8fc4f59481dd56c48e54dbcb6c9ed86f8f3e6dd3e6a6a627ac8fa",
+    "size": 1042656,
+    "signerSha256": "946cd2c9bfc12b85fb972a5d569e3e59341b0aa780f72c80fd2c3a3a59be8a3f",
+    "sourceUrl": "https://github.com/mmaarij123/microcord-quests"
+  }
+]
