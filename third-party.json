@@ -1,16 +1,16 @@
 [
   {
     "id": "platformindicators",
-    "packageName": "com.platformindicators.microcord",
+    "packageName": "io.github.mmaarij123.aplatformindicators",
     "name": "APlatformIndicators",
     "description": "Shows active Discord client platforms in chat and in the profile badge row",
     "authors": ["Strencher", "Maarij"],
-    "versionCode": 2,
-    "versionName": "1.1.0",
+    "versionCode": 3,
+    "versionName": "1.1.1",
     "pluginApiMinimum": 1,
-    "apkUrl": "https://github.com/mmaarij123/APlatformIndicators-Microcord/releases/download/v1.1.0/APlatformIndicators-Microcord-v1.1.0-debug.apk",
-    "sha256": "3094689961fd101e10b7ac3a47bb39061bac73d8f15dc193c866658fe0726841",
-    "size": 76376,
+    "apkUrl": "https://github.com/mmaarij123/APlatformIndicators-Microcord/releases/download/v1.1.1/APlatformIndicators-Microcord-v1.1.1-debug.apk",
+    "sha256": "40d7bc1504e414cffd1ce25c92398067ed5a892b5a8b42a5b67445b85c31020b",
+    "size": 76436,
     "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
     "sourceUrl": "https://github.com/mmaarij123/APlatformIndicators-Microcord"
   }
