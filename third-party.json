@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": "io.github.mmaarij123.v2componentfix",
+    "packageName": "io.github.mmaarij123.v2componentfix",
+    "name": "V2 Component fix",
+    "description": "Fit Discord Components V2 cards to their content and play animated media",
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 3,
+    "versionName": "1.2.0",
+    "pluginApiMinimum": 3,
+    "apkUrl": "https://github.com/mmaarij123/microcord-v2-component-fix/releases/download/v1.2.0/V2ComponentFix-1.2.0-debug.apk",
+    "sha256": "26cbad8a27faebb68b5578b9529c31df33d337a720421a453b4f3feb2b82eeab",
+    "size": 909755,
+    "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
+    "sourceUrl": "https://github.com/mmaarij123/microcord-v2-component-fix"
+  }
+]
