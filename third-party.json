@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": "manticord.permissionsviewer",
+    "packageName": "io.github.mmaarij123.permissionsviewer",
+    "name": "Permissions Viewer",
+    "description": "Inspect server roles, member permissions, and channel overwrites.",
+    "authors": ["Maarij"],
+    "versionCode": 3,
+    "versionName": "1.0.2",
+    "pluginApiMinimum": 1,
+    "apkUrl": "https://github.com/mmaarij123/microcord-permissions-viewer/releases/download/v1.0.2/PermissionsViewer-debug.apk",
+    "sha256": "dcead7e652271e9b0601b0081b43f9232b5cd91c1fa3dd9fe1e845a106626b7f",
+    "size": 913779,
+    "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
+    "sourceUrl": "https://github.com/mmaarij123/microcord-permissions-viewer"
+  }
+]
